@@ -27,12 +27,12 @@ your PS4/PS5.
 ## Using it
 
 1. Launch chiaki-ng and connect to your console. Keep its window at one size and position, since
-   Detection Points are saved as fixed screen coordinates.
+Detection Points are saved as fixed screen coordinates.
 2. On the **Automation** page, pick a script.
 3. For each Detection Point, click "Pick Region...", click or drag over the matching spot in
-   chiaki-ng, then click "Test" to confirm it works. A spot whose color jitters slightly from
-   video streaming can check "Match by image instead of color" instead, comparing against a saved
-   picture rather than one exact color.
+chiaki-ng, then click "Test" to confirm it works. A spot whose color jitters slightly from
+video streaming can check "Match by image instead of color" instead, comparing against a saved
+picture rather than one exact color.
 4. Click "Start Script", then focus chiaki-ng and press the script's arm hotkey.
 
 ## Script Maker
@@ -55,31 +55,15 @@ running PSMacro adds it straight back in with "Import Script Package".
 
 Beyond the controller key mapping and detection defaults, the Settings page has:
 
-- **Discord notifications.** Add a webhook URL and PSMacro posts to your channel when a script
-  starts, stops, or closes on its own.
-- **Update checks.** On by default. The About page also has a manual "Check for Updates" button.
-- **A global hotkey** to start or stop the selected script from anywhere, even while PSMacro isn't
-  the focused window.
-- **System tray and Windows startup** toggles, for running PSMacro out of the way in the background.
-- **A window focus check**, off by default. Turn it on and a Script Maker script waits for
-  chiaki-ng to actually be the active window before sending any key presses, instead of sending to
-  whatever currently has focus. Only affects scripts saved (or re-saved) in Script Maker afterward.
+* **Discord notifications.** Add a webhook URL and PSMacro posts to your channel when a script
+starts, stops, or closes on its own.
+* **Update checks.** On by default. The About page also has a manual "Check for Updates" button.
+* **A global hotkey** to start or stop the selected script from anywhere, even while PSMacro isn't
+the focused window.
+* **System tray and Windows startup** toggles, for running PSMacro out of the way in the background.
+* **A window focus check**, off by default. Turn it on and a Script Maker script waits for
+chiaki-ng to actually be the active window before sending any key presses, instead of sending to
+whatever currently has focus. Only affects scripts saved (or re-saved) in Script Maker afterward.
 
-## Troubleshooting
+## 
 
-- **AutoHotkey not found.** Use "Browse..." on the Automation page to point PSMacro at it directly.
-- **A Detection Point never matches.** Click "Test" and check the color it actually found. Raise
-  Tolerance a little, or re-pick the region if it's way off.
-- **Nothing happens in-game.** Click into the chiaki-ng window before pressing a script's arm
-  hotkey. Scripts send keys to whatever window currently has focus, unless you turn on the window
-  focus check in Settings.
-- **Closing PSMacro doesn't stop a running script.** That's intentional, so it can't accidentally
-  kill a run. Use "Stop Script" or the script's own quit hotkey.
-- **Build fails after downloading a ZIP.** Windows blocks downloaded ZIPs. Right-click it,
-  Properties, Unblock, or just `git clone` instead.
-
-## Known limitations
-
-- Script Maker has no reusable subroutines, and a condition combines at most two things at once.
-- No keyboard/controller macro recorder yet.
-- Not yet confirmed end to end on a wide range of Windows setups. Let us know if something breaks.
