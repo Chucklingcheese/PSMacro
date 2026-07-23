@@ -1,0 +1,61 @@
+#Requires AutoHotkey v2.0
+#MaxThreadsPerHotkey 2
+
+CoordMode "Pixel", "Screen"
+SetKeyDelay 50, 100
+Global ScriptActive := false
+
+IsEXAMPLE() {
+    return PixelSearch(&FoundX, &FoundY, {{EXAMPLE_X1}}, {{EXAMPLE_Y1}}, {{EXAMPLE_X2}}, {{EXAMPLE_Y2}}, 0x{{EXAMPLE_COLOR}}, {{EXAMPLE_TOLERANCE}})
+}
+
+F8:: {
+    Global ScriptActive
+    ScriptActive := !ScriptActive
+
+    if (!ScriptActive) {
+        ToolTip("Stopped.")
+        Sleep(1000)
+        ToolTip()
+        return
+    }
+
+    Loop {
+        if (!ScriptActive)
+            break
+
+        ; Step 1: show message
+        ToolTip("Example Script running - waiting for the example color...")
+        Sleep(1500)
+        if (!ScriptActive)
+            break
+
+        ; Step 2: wait up to 5000ms for EXAMPLE
+        StepFound2 := false
+        StepWaitStart2 := A_TickCount
+        while (A_TickCount - StepWaitStart2 < 5000 && ScriptActive) {
+            if (IsEXAMPLE()) {
+                StepFound2 := true
+                break
+            }
+            Sleep(100)
+        }
+        if (!ScriptActive)
+            break
+
+        ; Step 3: show message
+        ToolTip("Checked! Looping again in a moment...")
+        Sleep(1500)
+        if (!ScriptActive)
+            break
+
+        ; Step 4: wait
+        Sleep(1000)
+        if (!ScriptActive)
+            break
+
+    }
+    ToolTip()
+}
+
+Escape::ExitApp()

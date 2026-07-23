@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Id>dirt5-1000-miles</Id>
+  <Name>Dirt 5 - 1000 Miles</Name>
+  <Description>Holds R2 down to drive forward continuously, for grinding the "1000 Miles" event toward the "Spare Some Change for Gas?" trophy. Select the 1000 Miles event before starting. This macro has no fail-safe: it never stops on its own, so keep an eye on your run and stop it yourself when you're done. Assumes R2 is mapped to the 4 key in chiaki-ng (the default in Settings). Change the script's key by hand if yours is different.</Description>
+  <Author>ChucklingCheese</Author>
+  <ScriptFile>Dirt5.ahk.template</ScriptFile>
+  <HotkeysHelp>F8 holds R2 down and arms the macro. F8 again releases it and disarms. Esc quits.</HotkeysHelp>
+</Script>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScriptSteps>
+  <ArmHotkey>F8</ArmHotkey>
+  <QuitHotkey>Escape</QuitHotkey>
+  <Steps>
+    <Step>
+      <Type>ShowMessage</Type>
+      <Key>Enter</Key>
+      <HoldMs>100</HoldMs>
+      <WaitMinMs>1500</WaitMinMs>
+      <WaitMaxMs>1000</WaitMaxMs>
+      <DetectionPointKey></DetectionPointKey>
+      <RestartLoopWhenFound>true</RestartLoopWhenFound>
+      <Message>Example Script running - waiting for the example color...</Message>
+    </Step>
+    <Step>
+      <Type>WaitForColor</Type>
+      <Key>Enter</Key>
+      <HoldMs>100</HoldMs>
+      <WaitMinMs>5000</WaitMinMs>
+      <WaitMaxMs>1000</WaitMaxMs>
+      <DetectionPointKey>EXAMPLE</DetectionPointKey>
+      <RestartLoopWhenFound>false</RestartLoopWhenFound>
+      <Message></Message>
+    </Step>
+    <Step>
+      <Type>ShowMessage</Type>
+      <Key>Enter</Key>
+      <HoldMs>100</HoldMs>
+      <WaitMinMs>1500</WaitMinMs>
+      <WaitMaxMs>1000</WaitMaxMs>
+      <DetectionPointKey></DetectionPointKey>
+      <RestartLoopWhenFound>true</RestartLoopWhenFound>
+      <Message>Checked! Looping again in a moment...</Message>
+    </Step>
+    <Step>
+      <Type>Wait</Type>
+      <Key>Enter</Key>
+      <HoldMs>100</HoldMs>
+      <WaitMinMs>1000</WaitMinMs>
+      <WaitMaxMs>1000</WaitMaxMs>
+      <DetectionPointKey></DetectionPointKey>
+      <RestartLoopWhenFound>true</RestartLoopWhenFound>
+      <Message></Message>
+    </Step>
+  </Steps>
+</ScriptSteps>

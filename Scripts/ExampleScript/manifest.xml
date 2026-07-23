@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Id>ExampleScript</Id>
+  <Name>Example Script</Name>
+  <Description>A safe example showing how detection points and steps fit together. It never sends any key presses - it only watches for a color and shows on-screen messages - so it's a good way to learn the system or test detection on your setup before building something real. It was built with Script Maker, so you can open it there and change it directly.</Description>
+  <Author>ChucklingCheese</Author>
+  <ScriptFile>script.ahk.template</ScriptFile>
+  <HotkeysHelp>In-game: F8 arms/disarms the automation loop, Escape quits it.</HotkeysHelp>
+  <DetectionPoints>
+    <DetectionPoint>
+      <Key>EXAMPLE</Key>
+      <DisplayName>Example Color</DisplayName>
+      <Description>Pick any distinctive colored spot on your screen - an icon, a health bar, anything with a consistent color. Use "Pick Region..." to set it, then "Test" to confirm it's detected.</Description>
+      <X1>100</X1>
+      <Y1>100</Y1>
+      <X2>120</X2>
+      <Y2>120</Y2>
+      <Color>FFFFFF</Color>
+      <Tolerance>20</Tolerance>
+    </DetectionPoint>
+  </DetectionPoints>
+</Script>

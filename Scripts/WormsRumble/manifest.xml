@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Script>
+  <Id>worms-rumble</Id>
+  <Name>Worms Rumble - Lvl 50 and Weapon Levels Macro</Name>
+  <Description>Queues matches, loots crates, sweeps left and right, fights, respawns after dying, and returns to the lobby when a match ends. Includes fail-safes that stop the loop if it loses track of what's happening on screen, so it won't run wild if something looks unexpected.</Description>
+  <Author>ChucklingCheese</Author>
+  <ScriptFile>WormsRumble.ahk.template</ScriptFile>
+  <HotkeysHelp>F8 arms/disarms the loop once you're in the lobby. F9 disarms and reloads the script. Esc quits it.</HotkeysHelp>
+  <DetectionPoints>
+    <DetectionPoint>
+      <Key>LOBBY</Key>
+      <DisplayName>Start Matchmaking Button</DisplayName>
+      <Description>The yellow queue/play prompt shown on the main lobby screen. When this color is seen here, the script presses Enter to start matchmaking.</Description>
+      <X1>204</X1>
+      <Y1>1286</Y1>
+      <X2>224</X2>
+      <Y2>1306</Y2>
+      <Color>F9ED0B</Color>
+      <Tolerance>10</Tolerance>
+    </DetectionPoint>
+    <DetectionPoint>
+      <Key>HEALTH</Key>
+      <DisplayName>HP Indicator (bottom-left)</DisplayName>
+      <Description>The green health bar shown bottom-left of the screen while your worm is alive. This is the main "am I currently in a match" signal the whole script is built around.</Description>
+      <X1>289</X1>
+      <Y1>1345</Y1>
+      <X2>309</X2>
+      <Y2>1365</Y2>
+      <Color>8EDE0A</Color>
+      <Tolerance>60</Tolerance>
+    </DetectionPoint>
+    <DetectionPoint>
+      <Key>SPECTATE</Key>
+      <DisplayName>Spectate Indicator</DisplayName>
+      <Description>Shown after your worm dies while spectating teammates. When detected, the script presses Enter to respawn.</Description>
+      <X1>442</X1>
+      <Y1>1256</Y1>
+      <X2>462</X2>
+      <Y2>1276</Y2>
+      <Color>53BE14</Color>
+      <Tolerance>60</Tolerance>
+    </DetectionPoint>
+    <DetectionPoint>
+      <Key>BROKENLOBBY</Key>
+      <DisplayName>Alternate Lobby Screen</DisplayName>
+      <Description>A secondary lobby state that sometimes appears instead of the normal lobby screen (e.g. after an explosion animation). Lets the script recognize the lobby even when it doesn't look quite as expected.</Description>
+      <X1>197</X1>
+      <Y1>1261</Y1>
+      <X2>217</X2>
+      <Y2>1281</Y2>
+      <Color>FAF3FE</Color>
+      <Tolerance>10</Tolerance>
+    </DetectionPoint>
+    <DetectionPoint>
+      <Key>FRIENDS</Key>
+      <DisplayName>Friends Menu Overlay</DisplayName>
+      <Description>Detects if the Friends menu popped up and covers the game, so the script can automatically back out of it instead of getting stuck.</Description>
+      <X1>1797</X1>
+      <Y1>143</Y1>
+      <X2>1817</X2>
+      <Y2>163</Y2>
+      <Color>5C03AD</Color>
+      <Tolerance>10</Tolerance>
+    </DetectionPoint>
+  </DetectionPoints>
+</Script>

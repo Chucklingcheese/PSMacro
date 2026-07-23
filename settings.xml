@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AhkExecutablePath>C:\Program Files\AutoHotkey\v2\AutoHotkey64.exe</AhkExecutablePath>
+  <ControllerKeyMap>
+    <Cross>Enter</Cross>
+    <Circle>Backspace</Circle>
+    <Triangle>c</Triangle>
+    <Square>\</Square>
+    <DPadUp>Up</DPadUp>
+    <DPadDown>Down</DPadDown>
+    <DPadLeft>Left</DPadLeft>
+    <DPadRight>Right</DPadRight>
+    <L1>2</L1>
+    <R1>3</R1>
+    <L2>1</L2>
+    <R2>4</R2>
+    <L3>5</L3>
+    <R3>6</R3>
+    <Options>o</Options>
+    <Share>f</Share>
+    <PS>Escape</PS>
+    <Touchpad>t</Touchpad>
+    <LeftStickUp>Ins</LeftStickUp>
+    <LeftStickDown>Delete</LeftStickDown>
+    <LeftStickLeft>[</LeftStickLeft>
+    <LeftStickRight>]</LeftStickRight>
+    <RightStickUp>PgUp</RightStickUp>
+    <RightStickDown>PgDn</RightStickDown>
+    <RightStickLeft>-</RightStickLeft>
+    <RightStickRight>=</RightStickRight>
+  </ControllerKeyMap>
+  <DefaultDetectionTolerance>20</DefaultDetectionTolerance>
+  <RegionPickerPointHalfSize>10</RegionPickerPointHalfSize>
+  <MinimizeWhenPickingRegion>true</MinimizeWhenPickingRegion>
+  <DiscordWebhookUrl />
+  <CheckForUpdatesAutomatically>true</CheckForUpdatesAutomatically>
+  <MinimizeToTray>false</MinimizeToTray>
+  <GlobalStartStopHotkey>Ctrl+Alt+S</GlobalStartStopHotkey>
+  <CheckChiakiWindowFocus>false</CheckChiakiWindowFocus>
+  <ChiakiWindowTitleMatch>chiaki</ChiakiWindowTitleMatch>
+</Settings>
