@@ -6,23 +6,7 @@ Pick a script, tell it what to look for on screen by dragging boxes over a scree
 it detects correctly, then run it. Build your own scripts visually with Script Maker, no
 AutoHotkey knowledge needed.
 
-This is a full rewrite of [PS4Macro](https://github.com/komefai/PS4Macro), not an update to
-[chucklingcheese/PS4Macro](https://github.com/chucklingcheese/PS4Macro). Earlier versions tried
-DLL injection and a virtual controller; neither held up. Driving chiaki-ng with real keyboard
-input, the same way a person would, does.
-
 **BETA.** Built and verified as thoroughly as possible. Please report anything that doesn't work.
-
-## Getting started
-
-**You'll need:** Windows 10/11, [Visual Studio 2022](https://visualstudio.microsoft.com/) (".NET
-desktop development" workload), [AutoHotkey v2](https://www.autohotkey.com/), and
-[chiaki-ng](https://streetpea.github.io/chiaki-ng/setup/installation/) installed and paired to
-your PS4/PS5.
-
-1. `git clone` this repository (a ZIP download can get blocked by Windows, see Troubleshooting).
-2. Open `PSMacro.sln` in Visual Studio, build (Ctrl+Shift+B), and run (F5).
-3. Follow the in-app **Tutorial** page.
 
 ## Using it
 
